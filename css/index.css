@@ -10,9 +10,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -36,6 +39,8 @@ body {
 }
 
 .nav-link {
+    height: fit-content;
+    width: fit-content;
     color: white;
     font-size: 1.25rem;
     font-weight: var(--semi-bold);
@@ -44,6 +49,19 @@ body {
 .nav-link:hover {
     color: black;
     cursor: pointer;
+}
+
+.nav-link a {
+    color: inherit;
+}
+
+.nav-link a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav-active {
+    color: black;
 }
 
 .banner {
@@ -76,7 +94,7 @@ body {
 }
 
 .content-title {
-    height: 10%;
+    height: fit-content;
     border-bottom: 5px solid var(--primary-color);
     width: 35%;
     font-size: 3em;

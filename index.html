@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <title>UPZISNUPAKISAJI</title>
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <!-- Custom Plugin -->
+    <link rel="stylesheet" href="./css/plugin.css">
 </head>
 
 <body>
@@ -23,12 +25,19 @@
                     <div class="logo"><a href="index.html">UPZISNUPAKISAJI</a></div>
                 </div>
                 <div class="col-8">
-                    <ul class="nav-item h-100 d-flex flex-row justify-content-between">
-                        <li class="nav-link d-flex align-items-center active">Beranda</li>
-                        <li class="nav-link d-flex align-items-center">UPZISNU Pakisaji</li>
-                        <li class="nav-link d-flex align-items-center">ZPZIS Ranting</li>
-                        <li class="nav-link d-flex align-items-center">Laporan</li>
-                        <li class="nav-link d-flex align-items-center">Tentang</li>
+                    <ul class="nav-item h-100 d-flex align-items-center justify-content-between">
+                        <li class="nav-link d-flex align-items-center component-nav beranda nav-active">
+                            Beranda
+                        </li>
+                        <li class="nav-link d-flex align-items-center component-nav struktur">
+                            Struktur
+                        </li>
+                        <li class="nav-link d-flex align-items-center component-nav pentasarufan">
+                            Pentasarufan
+                        </li>
+                        <li class="nav-link d-flex align-items-center component-nav pentong-koin">
+                            Pentong Koin
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,22 +45,62 @@
     </nav>
     <!-- Content -->
     <main class="content">
-        <section class="banner w-100 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="banner-title mb-5">UPZISNU Pakisaji</h1>
-            <a href="#about-organization" class="banner-button">Pelajari Lebih Lanjut!</a>
-        </section>
-        <section class="main-content container pt-5 pb-5 d-flex flex-column align-items-center" id="about-organization">
-            <h1 class="content-title pb-2 mb-5 font-weight-bold text-center">Tentang Kami</h1>
-            <p class="content-body text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-                tempora deleniti natus a quasi ratione iure ab! Tempore, consequuntur animi. Dolores mollitia optio
-                voluptas vero similique, repellendus quasi magni perferendis.</p>
-            <!-- Tolong kasih deksripsi singkat tentang organisasi di paragraf atas, jangan panjang-panjang, ntar kurang menarik -->
-            <section class="content-buttons w-50 mb-5 d-flex justify-content-between">
-                <a class="p-3">Sejarah Kami!</a>
-                <a class="p-3">Kegiatan Kami!</a>
-                <!-- Tambahin bagian web apa yang perlu dilirik, seperti sejarah ato kegiatan organisasi -->
+        <!-- Beranda Component -->
+        <section class="beranda component active-component" id="beranda">
+            <section class="banner w-100 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="banner-title mb-5">UPZISNU Pakisaji</h1>
+                <a href="#about-organization" class="banner-button">Pelajari Lebih Lanjut!</a>
             </section>
-            <img src="./img/main-logo.png" alt="Lazis NU" class="content-image">
+            <section class="main-content container pt-5 pb-5 d-flex flex-column align-items-center"
+                id="about-organization">
+                <h1 class="content-title pb-3 mb-5 font-weight-bold text-center">Tentang Kami</h1>
+                <p class="content-body text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    tempora deleniti natus a quasi ratione iure ab! Tempore, consequuntur animi. Dolores mollitia optio
+                    voluptas vero similique, repellendus quasi magni perferendis.</p>
+                <!-- Tolong kasih deksripsi singkat tentang organisasi di paragraf atas, jangan panjang-panjang, ntar kurang menarik -->
+                <section class="content-buttons w-50 mb-5 d-flex justify-content-between">
+                    <a class="component-nav struktur p-3">Struktur Organisasi</a>
+                    <a class="component-nav pentasarufan p-3">Kegiatan Organisasi</a>
+                    <!-- Tambahin bagian web apa yang perlu dilirik, seperti sejarah ato kegiatan organisasi -->
+                </section>
+                <img src="./img/main-logo.png" alt="Lazis NU" class="content-image">
+            </section>
+        </section>
+        <!-- Struktur Component -->
+        <section class="struktur component" id="struktur">
+            <!-- Tinggal diedit isinya -->
+            <h1>Komponen Struktur</h1>
+            <section>
+                <p>Isi konten</p>
+            </section>
+            <!-- Isi aja sesuai yang dimau klien, nanti tak benerin -->
+        </section>
+        <!-- Pentasarufan Component -->
+        <section class="pentasarufan component" id="pentasarufan">
+             <!-- Tinggal diedit isinya -->
+            <h1>Komponen Pentasarufan</h1>
+            <section>
+                <p>Isi konten</p>
+            </section>
+            <!-- Isi aja sesuai yang dimau klien, nanti tak benerin -->
+        </section>
+        <!-- Giat UPZISNU Component -->
+        <section class="giat-upzisnu component" id="giat-upzisnu">
+             <!-- Tinggal diedit isinya -->
+            <h1>Komponen Giat UPZISNU</h1>
+            <section>
+                <p>Isi konten</p>
+            </section>
+            <!-- Isi aja sesuai yang dimau klien, nanti tak benerin -->
+        </section>
+        <!-- Pentong Koin Component -->
+        <section class="pentong-koin component" id="pentong-koin">
+             <!-- Tinggal diedit isinya -->
+            <h1>Komponen Pentong Koin</h1>
+            <section>
+                <p>Isi konten</p>
+            </section>
+            <!-- Isi aja sesuai yang dimau klien, nanti tak benerin -->
         </section>
     </main>
     <footer>
@@ -94,9 +143,28 @@
         integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
         crossorigin="anonymous"></script>
     <script>
-        $(document).ready(() => {
-            console.log("Document is ready!");
-            /* Future edited by Rafli */
+        $(document).ready(function(){
+            /* Berikut Plugin yang befungsi membuat page terbagi menjadi komponen, mengambil konsep cara kerja React JS */
+            console.log('Plugin Ready!')
+            // Isi dari array harus sama dengan class yang ada pada navigasi komponen (".component-nav")
+            const componentList = [
+                'beranda',
+                'struktur',
+                'pentasarufan',
+                'pentong-koin'
+            ]
+            // Plugin Script
+            $('.component-nav').click(function(){
+                for(let i = 0; i < componentList.length; i++){
+                    if($(this).hasClass(componentList[i])){
+                        console.log('Component', componentList[i], 'clicked!');
+                        $('.component').removeClass('active-component')
+                        $(`.component.${componentList[i]}`).addClass('active-component')
+                        $('.component-nav').removeClass('nav-active')
+                        $(`.component-nav.${componentList[i]}`).addClass('nav-active')
+                    }
+                }
+            })
         })
     </script>
 </body>
